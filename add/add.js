@@ -1,9 +1,5 @@
-function add() {
-    var args = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i] = arguments[_i];
-    }
-    return args.reduce(function (acc, num) { return acc + num; });
+function add(...args) {
+    return args.reduce((acc, num) => acc + num);
 }
 console.log(add(1, 2));
 console.log(add(3, 2));
